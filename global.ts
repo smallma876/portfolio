@@ -1,6 +1,6 @@
 export const navbarRouter = [
   {
-    path: "/home",
+    path: "/",
     name: "Home",
   },
   {
