@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainToolbar should render match snapshot 1`] = `Promise {}`;
+
+exports[`MainToolbar should render with mobile size 1`] = `Promise {}`;

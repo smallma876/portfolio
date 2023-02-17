@@ -3,7 +3,7 @@ import React from "react";
 import GiantText from "../../../../components/GiantText/GiantText";
 import TypingEffect from "../../../../components/TypingEffect/TypingEffect";
 import { Box, Flexbox } from "../../../../shared/components/Flexbox/Flexbox";
-import { Palette } from "../../../../utilities/palette";
+import { Palette } from "../../../../utils/palette";
 
 const languagesProgramming = [
   {
