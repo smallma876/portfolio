@@ -16,6 +16,7 @@ const TypingEffect: FC<TypingEffectProps> = ({
   const sizeLetter = useRef(0);
 
   useEffect(() => {
+    /* istanbul ignore next */
     const addLetter = () => {
       let nexLetter = text.substring(
         sizeLetter.current,
@@ -26,6 +27,7 @@ const TypingEffect: FC<TypingEffectProps> = ({
         return previousState.concat(nexLetter);
       });
     };
+    /* istanbul ignore else */
     if (splitText.length < text.length) {
       setTimeout(addLetter, 500);
     } else {

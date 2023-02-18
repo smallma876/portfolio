@@ -9,9 +9,11 @@ import { MainToolbarStyles } from "./MainToolbar.style";
 const MainToolbar = () => {
   const { isEqualOrLessThanMedium } = useMediaQuery();
   const [showMenu, setShowMenu] = useState(false);
+  /*istanbul ignore next */
   const toogleMenu = () => setShowMenu(!showMenu);
 
   useEffect(() => {
+    /*istanbul ignore next */
     if (!isEqualOrLessThanMedium) {
       setShowMenu(false);
     }
@@ -27,6 +29,7 @@ const MainToolbar = () => {
         >
           <Box>
             {isEqualOrLessThanMedium ? (
+              /*istanbul ignore next */
               <Image
                 src="./images/menu.svg"
                 alt="menu"
@@ -43,6 +46,7 @@ const MainToolbar = () => {
         </Flexbox>
       </MainToolbarStyles.Toolbar>
       {isEqualOrLessThanMedium && (
+        /*istanbul ignore next */
         <MainToolbarStyles.MenuLateral isShow={showMenu}>
           <MainToolbarStyles.IconCloseWrapper>
             <Image

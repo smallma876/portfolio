@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage --color",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "13.1.1",
@@ -15,12 +17,22 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
     "@types/styled-components": "^5.1.26",
+    "babel-jest": "^29.4.3",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.2",
+    "husky": "^8.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "react-test-renderer": "^18.2.0",
     "typescript": "4.9.4"
   },
   "resolutions": {

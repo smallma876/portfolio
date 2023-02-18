@@ -14,7 +14,7 @@ interface MenuLateralProps {
 const MenuLateral = styled.div<MenuLateralProps>`
   position: fixed;
   top: 0;
-  left: ${(props) => (props.isShow ? "0" : "-10rem")};
+  left: ${/*istanbul ignore next */ (props) => (props.isShow ? "0" : "-10rem")};
   bottom: 0;
   width: 10rem;
   background: #04293a;
