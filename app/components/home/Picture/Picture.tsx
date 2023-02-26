@@ -1,10 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
+import { myLoader } from "../../../../utils/loaderImages";
 
-const Picture = () => {
+interface PictureProps {
+  url: string;
+}
+
+const Picture: FC<PictureProps> = ({ url }) => {
   return (
     <Image
-      src="/images/foto.jpg"
+      loader={myLoader}
+      src={url}
       alt="picture-perfil"
       width={300}
       height={300}

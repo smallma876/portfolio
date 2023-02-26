@@ -1,16 +1,16 @@
 import { render, screen } from "@testing-library/react";
-import Profile from "../Profile";
+import Picture from "../Picture";
 
 const renderComponent = () => {
-  const { container } = render(<Profile title="hola mundo" />);
+  const { container } = render(<Picture url={"https://fakeUrl.com"} />);
 
   return container;
 };
 
-describe("Profile", () => {
+describe("Picture", () => {
   it("should render match snapshot", () => {
     const container = renderComponent();
-    expect(screen.getByText("hola mundo")).toBeInTheDocument();
+    expect(screen.getByAltText("picture-perfil")).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

@@ -3,13 +3,47 @@ import React from "react";
 import Picture from "../app/components/home/Picture/Picture";
 import Profile from "../app/components/home/Profile/Profile";
 import HomeLayout from "../components/Layouts/HomeLayout/HomeLayout";
+import { createClient } from "contentful";
+import { GetStaticProps } from "next";
+import { EntryPortfolio } from "../app/domain/EntryPortfolio";
 
-const Home: NextPage = () => {
+const client = createClient({
+  space: process.env.SPACE_KEY || "",
+  accessToken: process.env.ACCESS_TOKEN_KEY || "",
+});
+
+interface HomeProps {
+  profile: any;
+}
+
+const Home: NextPage<HomeProps> = ({ profile }) => {
+  const { title, url } = profile;
   return (
-    <HomeLayout leftSide={<Profile />}>
-      <Picture />
+    <HomeLayout leftSide={<Profile title={title} />}>
+      <Picture url={url} />
     </HomeLayout>
   );
+};
+
+// You should use getStaticProps when:
+//- The data required to render the page is available at build time ahead of a user’s request.
+//- The data comes from a headless CMS.
+//- The data can be publicly cached (not user-specific).
+//- The page must be pre-rendered (for SEO) and be very fast — getStaticProps generates HTML and JSON files, both of which can be cached by a CDN for performance.
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const data = await client.getEntries({
+    content_type: "portfolio",
+  }); // your fetch function here
+  const { fields } = data.items[0] as EntryPortfolio;
+
+  return {
+    props: {
+      profile: {
+        title: fields.title,
+        url: fields.imageProfile.fields.file.url,
+      },
+    },
+  };
 };
 
 export default Home;
