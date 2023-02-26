@@ -44,7 +44,7 @@ const Profile = () => {
   return (
     <>
       <TypingEffect component="h1" variant="h1" text="I'm Sergio" />
-      <GiantText color={Palette.DarkYellow}>Front End Developer</GiantText>
+      <GiantText color={Palette.White}>Front End Developer</GiantText>
       <Flexbox gap="0.5rem">
         {languagesProgramming.map(({ src, alt }) => (
           <Box key={alt}>

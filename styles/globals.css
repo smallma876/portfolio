@@ -4,7 +4,21 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #041c32;
+  background-image: linear-gradient(
+    to right top,
+    #08072c,
+    #091235,
+    #0d193f,
+    #112149,
+    #142853,
+    #1c3462,
+    #244072,
+    #2c4d82,
+    #3b629c,
+    #4979b6,
+    #5890d1,
+    #66a8ec
+  );
 }
 
 a {

@@ -16,8 +16,8 @@ const NavbarItem = styled.li`
   margin: 0;
   height: 3.5rem;
   :hover {
-    background: #ecb365;
-    color: #04293a;
+    background: #1c3462;
+    color: #FFFFFF;
   }
 `;
 
