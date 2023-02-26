@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Toolbar = styled.div`
-  background: #04293a;
+  background: #244072;
   height: 3.5rem;
   color: #fff;
   padding: 0 1rem;
