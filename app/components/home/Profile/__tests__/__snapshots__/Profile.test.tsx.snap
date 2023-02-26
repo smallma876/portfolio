@@ -1,3 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Profile should render match snapshot 1`] = `Promise {}`;
+exports[`Profile should render match snapshot 1`] = `
+<div>
+  <div
+    class="sc-gswNZR bybFwM"
+  >
+    <h1 />
+  </div>
+  <h1
+    class="sc-bcXHqe sVGpq"
+    color="#FFFFFF"
+  >
+    hola mundo
+  </h1>
+  <div
+    class="sc-dkrFOg lSzhK"
+  >
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="css3"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/css3-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="html"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/html-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="javascript"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/javascript-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="reactjs"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/reactjs-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="angular"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/angular-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="typescript"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/typescript-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="nextjs"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/nextjs-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+    <div
+      class="sc-hLBbgP"
+    >
+      <img
+        alt="git"
+        data-nimg="1"
+        decoding="async"
+        height="30"
+        loading="lazy"
+        src="./images/it/git-icon.svg"
+        style="color: transparent;"
+        width="30"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import GiantText from "../../../../components/GiantText/GiantText";
 import TypingEffect from "../../../../components/TypingEffect/TypingEffect";
 import { Box, Flexbox } from "../../../../shared/components/Flexbox/Flexbox";
@@ -40,11 +40,15 @@ const languagesProgramming = [
   },
 ];
 
-const Profile = () => {
+interface ProfileProps {
+  title: string;
+}
+
+const Profile: FC<ProfileProps> = ({ title }) => {
   return (
     <>
       <TypingEffect component="h1" variant="h1" text="I'm Sergio" />
-      <GiantText color={Palette.White}>Front End Developer</GiantText>
+      <GiantText color={Palette.White}>{title}</GiantText>
       <Flexbox gap="0.5rem">
         {languagesProgramming.map(({ src, alt }) => (
           <Box key={alt}>
