@@ -1,8 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import MainLayout from "../MainLayout";
+import { MainToolbarLayout } from "../MainToolbarLayout";
 
 const renderComponent = async () => {
-  const { container } = await render(<MainLayout top="top">Test</MainLayout>);
+  const { container } = await render(
+    <MainToolbarLayout>Test</MainToolbarLayout>
+  );
 
   return container;
 };
@@ -10,7 +12,7 @@ const renderComponent = async () => {
 describe("MainLayout", () => {
   it("should render match snapshot", () => {
     const container = renderComponent();
-    expect(screen.getByText("top")).toBeInTheDocument();
+    expect(screen.getByText("Test")).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });
 });

@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div``;
+const toolbarHeight = "3.5rem";
+
+const Wrapper = styled.div`
+  height: 100%;
+`;
 
 const Top = styled.div`
-    height: 8vh;
+  height: ${toolbarHeight};
 `;
 
 const Bottom = styled.div`
-    height: 92vh;
+  height: calc(100% - ${toolbarHeight});
 `;
 
 export const MainLayoutStyles = {

@@ -5,6 +5,7 @@ const Toolbar = styled.div`
   height: 3.5rem;
   color: #fff;
   padding: 0 1rem;
+  display: grid;
 `;
 
 interface MenuLateralProps {
@@ -17,7 +18,7 @@ const MenuLateral = styled.div<MenuLateralProps>`
   left: ${/*istanbul ignore next */ (props) => (props.isShow ? "0" : "-10rem")};
   bottom: 0;
   width: 10rem;
-  background: #04293a;
+  background: #244072;
   transition: left 0.3s ease-out;
   min-width: 10rem;
 `;
