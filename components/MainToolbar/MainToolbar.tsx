@@ -6,7 +6,7 @@ import NavbarRoutes from "../NavbarRoutes/NavbarRoutes";
 import SocialNetwork from "../SocialNetwork/SocialNetwork";
 import { MainToolbarStyles } from "./MainToolbar.style";
 
-const MainToolbar = () => {
+export const MainToolbar = () => {
   const { isEqualOrLessThanMedium } = useMediaQuery();
   const [showMenu, setShowMenu] = useState(false);
   /*istanbul ignore next */
@@ -22,11 +22,7 @@ const MainToolbar = () => {
   return (
     <>
       <MainToolbarStyles.Toolbar>
-        <Flexbox
-          justifyContent="space-between"
-          alignItems="center"
-          style={{ height: "100%" }}
-        >
+        <Flexbox justifyContent="space-between" alignItems="center">
           <Box>
             {isEqualOrLessThanMedium ? (
               /*istanbul ignore next */
@@ -64,5 +60,3 @@ const MainToolbar = () => {
     </>
   );
 };
-
-export default MainToolbar;

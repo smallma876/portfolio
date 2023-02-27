@@ -1,11 +1,12 @@
 import { NextPage } from "next";
 import React from "react";
-import Picture from "../app/components/home/Picture/Picture";
-import Profile from "../app/components/home/Profile/Profile";
-import HomeLayout from "../components/Layouts/HomeLayout/HomeLayout";
 import { createClient } from "contentful";
 import { GetStaticProps } from "next";
 import { EntryPortfolio } from "../app/domain/EntryPortfolio";
+import HomeLayout from "../app/pages/home/HomeLayout/HomeLayout";
+import Profile from "../app/pages/home/Profile/Profile";
+import Picture from "../app/pages/home/Picture/Picture";
+import { MainToolbarLayout } from "../components/MainToolbar/MainToolbarLayout";
 
 const client = createClient({
   space: process.env.SPACE_KEY || "",
@@ -19,9 +20,11 @@ interface HomeProps {
 const Home: NextPage<HomeProps> = ({ profile }) => {
   const { title, url } = profile;
   return (
-    <HomeLayout leftSide={<Profile title={title} />}>
-      <Picture url={url} />
-    </HomeLayout>
+    <MainToolbarLayout>
+      <HomeLayout leftSide={<Profile title={title} />}>
+        <Picture url={url} />
+      </HomeLayout>
+    </MainToolbarLayout>
   );
 };
 
