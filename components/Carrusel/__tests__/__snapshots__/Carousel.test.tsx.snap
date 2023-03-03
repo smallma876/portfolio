@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel test Render page carousel 1`] = `
+<div>
+  <div>
+    Carousel
+  </div>
+</div>
+`;

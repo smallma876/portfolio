@@ -12,7 +12,7 @@ export const navbarRouter = [
     name: "Contact Me",
   },
   {
-    path: "/jobs",
-    name: "Jobs",
+    path: "/projects",
+    name: "Projects"
   },
 ];
