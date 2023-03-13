@@ -8,7 +8,6 @@ export default async function handler(
   if (req.query.secret !== process.env.MY_SECRET_TOKEN_REVALIDATE) {
     return res.status(401).json({ message: "Invalid token" });
   }
-  console.log(req.body.record.id || req.body.old_record.id);
 
   try {
     // this should be the actual path not a rewritten path

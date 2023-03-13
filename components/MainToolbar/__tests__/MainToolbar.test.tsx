@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import MainToolbar from "../MainToolbar";
+import { MainToolbar } from "../MainToolbar";
 
 const renderComponent = async () => {
   const { container } = await render(<MainToolbar />);
