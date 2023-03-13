@@ -46,6 +46,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
         url: fields.imageProfile.fields.file.url,
       },
     },
+    //revalidate: 30, pasarán 30 segundos y en lasiguiente petición regenerará la página y en la siguiente mostrará la actualizada.
   };
 };
 
