@@ -32,6 +32,29 @@ const index = () => {
             </a>
           </Box>
         </Flexbox>
+        <Flexbox justifyContent="center" alignItems="center" gap="1.5rem">
+          <Box>
+            <GiantText color={Palette.DarkYellow}>MOVIE SEARCHER :</GiantText>
+          </Box>
+          <Box>
+            <a
+              href="https://smallma876.github.io/movie-searcher/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GiantText color={Palette.White}>
+                MOVIE SEARCHER{" "}
+                <Image
+                  src="./images/internal/externallink.svg"
+                  alt="external link"
+                  width={36}
+                  height={36}
+                  style={{ cursor: " pointer" }}
+                />
+              </GiantText>
+            </a>
+          </Box>
+        </Flexbox>
       </section>
     </MainToolbarLayout>
   );
